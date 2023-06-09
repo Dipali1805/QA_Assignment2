@@ -161,6 +161,56 @@ namespace Assignment2
             Assert.AreEqual(expected, result);
         }
 
+        [Test]
+        public void VerifyingZeroLengthForOneSide_Input0and58and72_OuputVerifyingZeroLengthForOneSide()
+        {
+            // Arrange
+            int firstSide = 0;
+            int secondSide = 58;
+            int thirdSide = 72;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void VerifyingZeroLengthForOneSide_Input4and0and8_OuputVerifyingZeroLengthForOneSide()
+        {
+            // Arrange
+            int firstSide = 4;
+            int secondSide = 0;
+            int thirdSide = 8;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void VerifyingZeroLengthForOneSide_Input3and9and0_OuputVerifyingZeroLengthForOneSide()
+        {
+            // Arrange
+            int firstSide = 3;
+            int secondSide = 9;
+            int thirdSide = 0;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
 
 
 
