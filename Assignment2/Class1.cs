@@ -76,6 +76,91 @@ namespace Assignment2
             Assert.AreEqual(expected, result);
         }
 
+        [Test]
+        public void ValidScaleneTriangle_Input5and6and9_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstSide = 5;
+            int secondSide = 6;
+            int thirdSide = 9;
+
+            string expected = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangle_Input8and9and12_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstSide = 8;
+            int secondSide = 9;
+            int thirdSide = 12;
+
+            string expected = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangle_Input9and5and11_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstSide = 9;
+            int secondSide = 5;
+            int thirdSide = 11;
+
+            string expected = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangle_Input7and10and14_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstSide = 7;
+            int secondSide = 10;
+            int thirdSide = 14;
+
+            string expected = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangle_Input4and13and15_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstSide = 4;
+            int secondSide = 13;
+            int thirdSide = 15;
+
+            string expected = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
 
 
 
