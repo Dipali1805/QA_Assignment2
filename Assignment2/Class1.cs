@@ -212,9 +212,56 @@ namespace Assignment2
             Assert.AreEqual(expected, result);
         }
 
+        [Test]
+        public void VerifyingInvalidResponse_Input2and3and6_OutputVerifyingInvalidResponse()
+        {
+            // Arrange
+            int firstSide = 2;
+            int secondSide = 3;
+            int thirdSide = 6;
 
+            string expected = "A triangle cannot be formed with those numbers";
 
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
 
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void VerifyingInvalidResponse_Input8and9and22_OutputVerifyingInvalidResponse()
+        {
+            // Arrange
+            int firstSide = 8;
+            int secondSide = 9;
+            int thirdSide = 22;
+
+            string expected = "A triangle cannot be formed with those numbers";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void VerifyingInvalidResponse_Input6and8and2_OutputVerifyingInvalidResponse()
+        {
+            // Arrange
+            int firstSide = 6;
+            int secondSide = 8;
+            int thirdSide = 2;
+
+            string expected = "A triangle cannot be formed with those numbers";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
 
     }
 }
